@@ -1,20 +1,3 @@
-// $.ajax({
-//     url: "http://l5d1137.callbox.com.br/monitoramento/lib/ramais.php",
-//     type: "GET",
-//     success: function(data){                
-//         for(let i in data){
-//             $('#cartoes').append(`<div class="cartao">
-//                                 <div>${data[i].nome}</div>
-//                                 <span class="${data[i].status} icone-posicao"></span>
-//                               </div>`)
-//         }
-        
-//     },
-//     error: function(){
-//         console.log("Errouu!")
-//     }
-// });
-
 // Requisição Ajax dos ramais em Javascript
 
 const xhr = new XMLHttpRequest
@@ -87,7 +70,7 @@ xhr.onreadystatechange = () => {
             newDataOnlineArray.push(0)
         }
     })
-    
+
     formData.append('arrayNome', dataNomeArray)
     formData.append('arrayOperador', dataOperadorArray)
     formData.append('arrayStatus', dataStatusArray)
